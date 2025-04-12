@@ -8,14 +8,14 @@ namespace StatePattern.Enemy
 {
     public class EnemyController
     {
-        protected EnemyScriptableObject enemyScriptableObject;
+        public EnemyScriptableObject enemyScriptableObject;
         protected EnemyView enemyView;
 
         protected int currentHealth;
         protected EnemyState currentState;
         protected NavMeshAgent Agent => enemyView.Agent;
-        protected EnemyScriptableObject Data => enemyScriptableObject;
-        protected Quaternion Rotation => enemyView.transform.rotation;
+        public EnemyScriptableObject Data => enemyScriptableObject;
+        public Quaternion Rotation => enemyView.transform.rotation;
         protected Vector3 Position => enemyView.transform.position;
 
 
